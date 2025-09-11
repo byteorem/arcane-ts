@@ -1,0 +1,43 @@
+{
+  "name": "arcane-ts",
+  "version": "0.1.0",
+  "description": "TypeScript library for Blizzard's World of Warcraft API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "bunchee",
+    "check": "biome check .",
+    "check:write": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "wow",
+    "blizzard",
+    "armory",
+    "api",
+    "typescript"
+  ],
+  "author": "Byteorem",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "bunchee": "^6.6.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "ky": "^1.10.0",
+    "slugify": "^1.6.6"
+  }
+}
