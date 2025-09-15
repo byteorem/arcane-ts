@@ -1,5 +1,5 @@
 {
-  "name": "arcane-ts",
+  "name": "@byteorem/arcane-ts",
   "version": "0.1.0",
   "description": "TypeScript library for Blizzard's World of Warcraft API",
   "type": "module",
