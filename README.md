@@ -1,11 +1,13 @@
-# arcane-ts
+# wow-arcane-ts
 
 TypeScript library for the Blizzard's World of Warcraft API, providing character data.
+
+This wrapper is still in development.
 
 ## Installation
 
 ```bash
-npm install arcane-ts
+npm install wow-arcane-ts
 ```
 
 ## Usage
@@ -14,9 +16,9 @@ npm install arcane-ts
 import { ArcaneClient } from 'arcane-ts';
 
 const client = new ArcaneClient({
-	BLIZZARD_CLIENT_ID: 'your-client-id',
-	BLIZZARD_CLIENT_SECRET: 'your-client-secret',
-	region: 'us' // Optional: 'us', 'eu', 'kr', 'tw' (defaults to 'us')
+ BLIZZARD_CLIENT_ID: 'your-client-id',
+ BLIZZARD_CLIENT_SECRET: 'your-client-secret',
+ region: 'us' // Optional: 'us', 'eu', 'kr', 'tw' (defaults to 'us')
 });
 
 // Get character equipment
