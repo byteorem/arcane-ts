@@ -13,7 +13,7 @@ npm install wow-arcane-ts
 ## Usage
 
 ```typescript
-import { ArcaneClient } from 'arcane-ts';
+import { ArcaneClient } from 'wow-arcane-ts';
 
 const client = new ArcaneClient({
  BLIZZARD_CLIENT_ID: 'your-client-id',
