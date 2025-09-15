@@ -15,7 +15,8 @@
     "build": "bunchee",
     "check": "biome check .",
     "check:write": "biome check --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm build && ava"
   },
   "files": [
     "dist"
@@ -32,6 +33,7 @@
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
     "@biomejs/biome": "^2.2.4",
+    "ava": "^6.4.1",
     "bunchee": "^6.6.0",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
@@ -39,5 +41,14 @@
   "dependencies": {
     "ky": "^1.10.0",
     "slugify": "^1.6.6"
-  }
+  },
+  "ava": {
+		"extensions": {
+			"ts": "module"
+		},
+		"nodeArguments": [
+			"--import=tsx/esm"
+		],
+		"workerThreads": false
+	}
 }
